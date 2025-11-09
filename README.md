@@ -469,47 +469,9 @@ Central hub for student academic information.
 
 ---
 
-## Security Implementation
 
-### Data Protection
 
-**Encryption Standards**
-- TLS 1.3 for data in transit
-- AES-256 for data at rest
-- Encrypted database backups
-- Secure key management
 
-**Authentication Security**
-- Bcrypt password hashing
-- Account lockout after failed attempts
-- Password complexity requirements
-- Session timeout mechanisms
-- Secure password reset workflows
-
-**Authorization Controls**
-- Role-based access control
-- Principle of least privilege
-- API endpoint permission verification
-- Resource-level authorization
-- Admin action audit logging
-
-### Privacy Compliance
-
-**Data Handling**
-- FERPA compliance for educational records
-- GDPR considerations for international students
-- Minimal data collection principle
-- User data access rights
-- Data deletion capabilities
-
-**User Controls**
-- Granular privacy settings
-- Profile visibility controls
-- Activity sharing preferences
-- Data export functionality
-- Account deletion options
-
----
 
 ## Team Structure
 
@@ -527,7 +489,7 @@ Central hub for student academic information.
 
 ### Client Representatives
 
-**Shazia, Maryam, Eshna**
+**Shazia and Maryam**
 - Requirement validation
 - User acceptance testing
 - Feature feedback provision
