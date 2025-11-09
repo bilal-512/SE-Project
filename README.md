@@ -1,7 +1,6 @@
 # SE-Project
 Googesheet link: https://github.com/bilal-512/SE-Project/blob/main/meeting_minutes/googlesheet.md
-# SE-Project
-Googesheet link: https://github.com/bilal-512/SE-Project/blob/main/meeting_minutes/googlesheet.md
+
 # Student Productivity & Engagement Platform
 
 ## Table of Contents
