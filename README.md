@@ -1,3 +1,5 @@
+# SE-Project
+Googesheet link: https://github.com/bilal-512/SE-Project/blob/main/meeting_minutes/googlesheet.md
 # Student Productivity & Engagement Platform
 
 ## Table of Contents
@@ -518,7 +520,7 @@ Central hub for student academic information.
 
 **Waseem** - Mobile Developer
 - React Native application development
-  
+
 - **Hadia** -UI/UX designs
 - Frontend  development
 
@@ -580,4 +582,5 @@ Fork the repository and create feature branches for development. Follow establis
 
 
  
+
 **Status**: In Development  
