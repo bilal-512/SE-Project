@@ -1,0 +1,363 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{lipsum}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{figure}[h]
+\centering
+\hspace{2cm} % adjust this value
+\includegraphics[width=0.2\textwidth]{logo4980416.png}
+\end{figure}
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Student Productivity & Engagement Platform - Project Proposal},
+    pdfauthor={Project Team},
+    pdfpagemode=FullScreen,
+}
+
+
+\def\ProjectTitle{Student Productivity \& Engagement Platform}
+\def\SubjectTitle{Software Engineering Project (CS-401)}
+\def\DepartmentName{Department of Computer Science}
+\def\UniversityName{Namal University Mianwali}
+\def\SubmissionDate{November 9, 2025}
+
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{\ProjectTitle}}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+
+\newcommand{\makeproposaltitle}{
+    \thispagestyle{empty}
+    \begin{center}
+        \vspace*{1.5cm}
+        
+        {\Huge\bfseries \ProjectTitle}
+        
+        \vspace{0.1cm}
+        {\Large A Proposal for the Course: \SubjectTitle}
+                
+        \vspace{0.5cm}
+        {\Large\bfseries Instructor:}
+        
+        \vspace{0.2cm}
+        {\large Asiya Batool}
+        
+        \vspace{1cm}
+        {\Large\bfseries Team Members}
+        
+        \vspace{0.5cm}
+        \begin{tabular}{|p{0.28\textwidth}|p{0.28\textwidth}|p{0.32\textwidth}|}
+            \hline
+            \centering\textbf{Name} & \centering\textbf{Roll Number} & \centering\arraybackslash\textbf{Email} \\
+            \hline
+            \centering Hadia Yasir & \centering NUM-BSCS-2024-23 & \centering\arraybackslash bscs24f23@namal.edu.pk \\
+            \hline
+            \centering Muhammad Bilal & \centering NUM-BSCS-2024-47& \centering\arraybackslash bscs24f47@namal.edu.pk \\
+            \hline
+            \centering Waseem Ullah & \centering NUM-BSCS-2024-78 & \centering\arraybackslash bscs24f78@namal.edu.pk\\
+            \hline
+        \end{tabular}
+        
+        \vspace{2cm}
+        {\Large\bfseries Client Representatives:}
+        
+        \vspace{0.3cm}
+        {\large Shazia Nazir and  Maryam Noor ul Ain}
+        
+        \vspace{1cm}
+        {\Large\bfseries Submitted To:}
+        
+        \vspace{0.3cm}
+        {\large\DepartmentName\\
+        \UniversityName}
+        
+        \vspace{1.5cm}
+        {\Large\bfseries Submission Date:}
+        
+        \vspace{0.3cm}
+        {\large\SubmissionDate}
+        
+    \end{center}
+    \clearpage
+}
+
+\begin{document}
+
+% --- Title Page ---
+\makeproposaltitle
+
+% --- Requirement Provider Agreement ---
+\pagenumbering{roman}
+\section*{Requirement Provider Agreement}
+\addcontentsline{toc}{section}{Requirement Provider Agreement}
+
+\begin{center}
+    \textbf{\large MEMORANDUM OF UNDERSTANDING}
+\end{center}
+
+\vspace{0.5cm}
+
+This agreement confirms a collaborative partnership between the student project team (\textbf{The Developers}: Hadia, Bilal, and Waseem) and the identified Requirement Providers (\textbf{The RPs}: Shazia, Maryam, and Eshna) for the project entitled \textbf{\ProjectTitle}.
+
+\vspace{0.2cm}
+
+\noindent\textbf{The Developers Agree To:}
+\begin{itemize}[leftmargin=*, itemsep=0.2cm]
+    \item Regularly consult with the RPs to clarify project requirements and validate objectives through scheduled meetings and prototype demonstrations.
+    \item Provide the RPs with status reports at the end of each sprint cycle, including wireframes, mockups, and working features for feedback.
+    \item Deliver a final working platform (web and mobile) as outlined in the proposal objectives, incorporating gamification, collaboration, and wellness features.
+    \item Conduct user acceptance testing (UAT) sessions with the RPs to ensure the system meets their expectations and requirements.
+\end{itemize}
+\vspace{0.2cm}
+
+\noindent\textbf{The RPs Agree To:}
+\begin{itemize}[leftmargin=*, itemsep=0.2cm]
+    \item Be available for scheduled meetings to provide timely feedback, clarify requirements, and validate feature implementations.
+    \item Participate actively in prototype testing sessions and provide honest feedback on usability, engagement features, and overall user experience.
+    \item Validate the requirements and acceptance criteria for the final system from a student user perspective.
+    \item Assist in gathering feedback from other potential student users during the beta testing phase.
+\end{itemize}
+
+\vspace{0.2cm}
+
+\noindent Both parties commit to maintaining clear communication and good faith effort throughout the duration of the project, from the submission date (\SubmissionDate) until final project delivery.
+
+
+
+
+\noindent\textbf{Signatures:}
+
+\vspace{0.2cm}
+
+\noindent
+\begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \rule{0.9\textwidth}{0.4pt}\\
+    \textbf{Student Team Representative}\\[0.3cm]
+    \textit{Name:} \underline{\hspace{4cm}} \\[0.3cm]
+    \textit{Date:} \underline{\hspace{4cm}} \\[0.5cm]
+    \href{https://smallpdf.com/sign-pdf#r=sign}{\textcolor{blue}{Click here to sign digitally}} \\[0.2cm]
+    \textit{(Authorized Digital Signature Link)}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \rule{0.9\textwidth}{0.4pt}\\
+    \textbf{Requirement Provider Representatives}\\[0.3cm]
+    \textit{Names:} \underline{\hspace{4cm}} \\[0.3cm]
+    \textit{Date:} \underline{\hspace{4cm}} \\[0.5cm]
+    \href{https://smallpdf.com/sign-pdf#r=sign}{\textcolor{blue}{Click here to sign digitally}} \\[0.2cm]
+    \textit{(Authorized Digital Signature Link)}
+\end{minipage}
+
+\vspace{0.2cm}
+
+\noindent\textit{Note:} Both parties may digitally sign this document.
+
+
+\clearpage
+
+% --- Table of Contents ---
+\tableofcontents
+\clearpage
+
+% --- Main Content ---
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\onehalfspacing
+
+% --- Introduction ---
+\section{Introduction}
+
+The way students use academic resources has changed a lot because of the digital transformation in higher education. However, this change has often made things more complicated instead of easier.
+
+This proposal aims to fix that by creating a better learning experience for today’s university students. It suggests one platform that brings all academic information together in one place. The platform also keeps students engaged through games, collaboration, and wellness support, helping them learn in a more lasting way.
+\subsection{Background and Context}
+
+Students around the world are facing a fragmentation crisis in how they manage their academic lives. They often juggle too many separate systems—Learning Management Systems (LMS), email, WhatsApp groups, university portals, and other third-party tools. Managing all these platforms at once leads to confusion, missed deadlines, higher stress, and, in the end, lower academic performance and well-being.
+
+This proposal falls under the Education Technology (EdTech) category, with a focus on Campus Services, Student Management, and Digital Wellness. Modern universities are beginning to realize that simply putting existing processes online is not enough. Students need tools that not only organize information but also motivate them to stay engaged and support their mental and emotional health throughout their studies.
+
+Research in educational psychology and learning analytics shows that students who use integrated, gamebased learning platforms are more engaged, complete more tasks, and manage stress better than those who rely on traditional academic tools. Studies also show that peer collaboration and mentorship greatly improve student retention and academic success.
+
+This project brings together these research findings to create a practical, student-centered platform. It is designed based on detailed feedback from our client representatives: Shazia, Maryam, and Eshna.
+
+Unlike typical task management tools that treat work as just a checklist, this platform takes the best approach. It combines organization, motivation, collaboration, and well-being support into one connected system—helping students not just manage their work, but thrive in their academic journey.
+
+
+\section{Problem Statement}
+
+Lack of a cohesive, interesting, and inspiring digital platform to manage their academic lives causes university students to fragment important information, prioritize tasks poorly, and experience more stress and burnout.  Student productivity, academic achievement, and general mental health are all negatively impacted by this systemic issue.
+
+ The main source of discomfort is the \textbf{lack of a centralized, encouraging, and helpful student ecosystem}.  In particular, the following serious problems are present in the current landscape:
+\begin{enumerate}[leftmargin=*, itemsep=0.3cm]
+    \item \textbf{Time Waste and Information Fragmentation:}  Students constantly have to check multiple platforms for different types of information. The university LMS is used for assignments and grades, email for official messages, WhatsApp groups for peer discussions, and the student portal for administrative announcements.
+
+This fragmentation wastes valuable study time. Students often spend more time searching for updates than actually studying. It also causes missed deadlines, overlooked notifications, and constant anxiety about missing something important.
+
+On average, a student may spend 30 to 45 minutes each day just trying to gather information from these different sources.
+    \item \textbf{Lack of Engagement and Motivation:}  The academic tools that are currently in use are entirely transactional and mechanical in nature, treating students more like passive information consumers than active learners.  These resources don't help students develop long-lasting study habits, don't offer any internal incentives for regular participation, and don't acknowledge effort or accomplishment.  Procrastination, uneven platform usage, and a feeling of academic boredom that fuels burnout are the outcomes.
+    
+    \item \textbf{Inadequate Support and Collaboration Systems:}  There are currently no organized methods for academic mentoring, group study, or peer-to-peer learning on the platforms.  Students find it difficult to organize productive study groups, lack a methodical approach to asking for or providing academic help, and pass up chances for group projects that could improve comprehension and memory.  For students who learn best through discussion and teamwork, this isolation is especially problematic.
+    
+    \item \textbf{Impaired Wellbeing and Prevention of Burnout:}  There are currently no tools that promote balanced study habits or actively support students' mental health.  The academic workflow does not incorporate wellness practices, encourage healthy breaks, or provide tools to assist students in identifying when they are overworking.  The concerning levels of stress, anxiety, and burnout among college students are a result of this oversight.
+\end{enumerate}
+
+\textbf{Who is Affected:}  University students who deal with daily stress and frustration from disjointed systems are directly impacted by this issue.  Faculty and administration are indirectly impacted because they deal with a rise in student inquiries brought on by misunderstandings and omitted messages.  Most significantly, it impacts the university as a whole, which has a strategic interest in raising student retention, success rates, and general academic satisfaction.
+
+% --- Project Objectives ---
+\section{Project Objectives}
+
+The successful completion of this project will be measured by achieving the following specific, measurable, achievable, relevant, and time-bound (SMART) goals:
+
+\begin{enumerate}[label=\textbf{O\arabic*.}, leftmargin=*, itemsep=0.4cm]
+    \item The goal is to create an integrated platform that brings together all important academic updates in one place. This includes assignment deadlines, grade releases, course announcements, and administrative notifications from the university’s Learning Management System (LMS) and student portal.
+
+All this information will appear in a single, personalized dashboard that students can access on both web and mobile devices.
+    
+    \item To \textbf{implement a comprehensive gamification engine} incorporating points, badges, achievement streaks, leaderboards, and personalized challenges that actively motivates students to maintain consistent engagement with their academic tasks. Success metric: Achieve a 20\% measurable increase in active, consistent user engagement with the task management system within the first semester of deployment, as measured by daily active users and task completion rates.
+    
+    \item To \textbf{build collaborative features} including group study room creation, team-based challenges, peer mentorship matching, and knowledge-sharing forums that facilitate meaningful peer-to-peer support and academic guidance within the platform. Success metric: At least 40\% of active users participating in at least one collaborative feature within the first two months of deployment.
+    
+    \item To \textbf{integrate wellness and burnout prevention features} such as study-break reminders, workload balance indicators, stress level tracking, and mindfulness exercise suggestions that promote student mental health and sustainable study habits. Success metric: User-reported stress levels (via periodic surveys) showing a 15\% improvement after three months of platform usage.
+    
+    \item To \textbf{design and deploy multi-platform support} with native mobile applications (iOS and Android) and a responsive web application to ensure the system is accessible and provides an optimal user experience across all devices students commonly use. Success metric: 95\% user satisfaction rating for usability and accessibility across platforms based on post-launch surveys.
+\end{enumerate}
+
+These objectives align with the university's strategic goals of enhancing student success, improving retention rates, and fostering a supportive campus environment while providing concrete, measurable outcomes that can be evaluated at project milestones and completion.
+
+% --- Stakeholder Identification ---
+\section{Stakeholder Identification}
+
+Understanding stakeholder needs and their interaction with the system is crucial for successful project delivery. The primary stakeholders have been identified through extensive interviews and analysis with our client representatives:
+
+\begin{longtable}{|>{\centering\arraybackslash}m{0.25\textwidth}|>{\centering\arraybackslash}m{0.18\textwidth}|>{\raggedright\arraybackslash}m{0.47\textwidth}|}
+    \caption{Project Stakeholder Analysis\label{tab:stakeholders}} \\
+    \hline 
+    \textbf{Stakeholder Group} & \textbf{Role} & \textbf{Relation to System} \\ 
+    \hline
+    \endfirsthead
+    
+    \multicolumn{3}{c}{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+    \hline 
+    \textbf{Stakeholder Group} & \textbf{Role} & \textbf{Relation to System} \\ 
+    \hline
+    \endhead
+    
+    \hline 
+    \multicolumn{3}{|r|}{\textit{Continued on next page}} \\ 
+    \hline
+    \endfoot
+    
+    \hline
+    \endlastfoot
+    
+    End Users (University Students) & Primary Users & The central stakeholders for whom the entire system is designed. They use the platform daily for task management, viewing academic updates, engaging with gamification features, collaborating with peers, and accessing wellness resources. Their engagement level and satisfaction are the primary measures of system success. \\
+    \hline
+    Client Representatives (Shazia, Maryam, Eshna) & Requirement Providers \& Testers & Serve as the voice of the student user base throughout development. They provide detailed functional and non-functional requirements, participate in prototype testing, validate feature implementations, and ensure the final product meets actual student needs rather than assumed requirements. \\
+    \hline
+    Development Team (Hadia, Bilal, Waseem) & System Builders & Responsible for the complete system design, implementation, testing, and deployment. They translate user requirements into technical specifications, build the frontend and backend components, ensure system security and performance, and deliver the final working platform. \\
+    \hline
+    System Administrators (University IT Department) & Technical Support \& Maintenance & Manage user authentication integration with university systems (LDAP/SSO), oversee LMS API integration, maintain server infrastructure, ensure data security and privacy compliance, handle system monitoring, and provide ongoing technical support after deployment. \\
+    \hline
+    Faculty Members & Indirect Beneficiaries & Benefit from having more organized, informed students who are less likely to miss deadlines or overlook announcements. May also use insights from the platform to understand student workload patterns and engagement levels, though they are not direct users of the system. \\
+    \hline
+    University Administration \& Department Heads & Strategic Stakeholders & Have institutional interest in improved student success metrics, retention rates, and overall satisfaction. They benefit from analytics showing student engagement patterns and may use aggregated data for strategic planning and resource allocation decisions. \\
+    \hline
+\end{longtable}
+
+Each stakeholder group has distinct needs and expectations from the system, which will be addressed through targeted features, carefully designed user interfaces, and ongoing communication throughout the development process.
+
+% --- Software Development Methodology ---
+\section{Software Development Methodology}
+
+We will utilize the \textbf{Agile Methodology, specifically Scrum}, for this project, implementing iterative development cycles with continuous stakeholder feedback and incremental feature delivery.
+
+\subsection{Justification}
+
+The Agile/Scrum methodology is particularly suitable for this project for the following compelling reasons:
+
+\begin{itemize}[leftmargin=*, itemsep=0.3cm]
+    \item \textbf{High Requirement for User Feedback:} This project's success is fundamentally dependent on student engagement and satisfaction. The Agile approach enables continuous client involvement through sprint reviews, prototype demonstrations, and feedback sessions with our client representatives (Shazia, Maryam, and Eshna). This ensures the platform evolves based on actual user needs rather than assumptions made at the project's inception.
+    
+    \item \textbf{Evolving Feature Requirements:} While core functionalities such as task management and LMS integration are well-defined, specific implementation details for gamification elements (point systems, badge designs, challenge types), the optimal UI/UX for engagement, and the most effective wellness features will require iterative refinement based on user testing and feedback. Agile's flexibility accommodates this evolution naturally.
+    
+    \item \textbf{Complex Integration Requirements:} The project involves integration with existing university systems (LMS, authentication services) whose APIs and behaviors may present unexpected challenges. Agile's iterative approach allows early identification of integration issues and provides opportunities to adjust technical approaches as needed.
+    
+    \item \textbf{Risk Management:} Breaking the project into short sprints (2-4 weeks each) allows for early identification and mitigation of technical risks, particularly regarding cross-platform development, real-time synchronization, and mobile performance optimization. Each sprint delivers working, testable features that can be validated before proceeding further.
+    
+    \item \textbf{Ideal Timeline Fit:} A one-year development schedule perfectly accommodates 6-8 major sprint cycles, providing sufficient time for comprehensive development, extensive testing, user acceptance validation, and refinement while maintaining steady, measurable progress throughout the academic year.
+\end{itemize}
+
+
+
+% --- Tools and Technologies ---
+\section{Tools and Technologies}
+
+The technology stack has been carefully selected based on requirements for cross-platform compatibility, scalability, real-time synchronization capabilities, and maintainability over the project lifecycle and beyond.
+
+\subsection{Development and Collaboration Tools}
+
+\begin{itemize}[leftmargin=*, itemsep=0.3cm]
+    \item \textbf{UI/UX Design:} Figma for collaborative interface design, interactive prototyping, and design system management
+    \item \textbf{Version Control:} Git with GitHub for code repository, branching strategy, and collaborative development
+    \item \textbf{Project Management:} Jira for sprint planning, user story tracking, and issue management following Scrum methodology
+    \item \textbf{API Testing and Documentation:} Postman for API endpoint testing, documentation, and sharing test collections
+    \item \textbf{Communication:} Slack for team communication and Microsoft Teams for client meetings and demonstrations
+\end{itemize}
+
+
+
+
+
+
+\subsection*{AI-Generated Prompts/Queries Used}
+\addcontentsline{toc}{subsection}{AI-Generated Prompts/Queries Used}
+
+In the spirit of academic transparency, the following AI-assisted queries were used during the preparation of this proposal:
+
+\begin{itemize}[leftmargin=*, itemsep=0.2cm]
+  
+\item ``What are the competitors of studyapps in 2025 and what are main features in it?''
+  \item `` "Make a thorough README file for my project on the Student Productivity & Engagement Platform.  Project overview, problem statement, goals, technology stack, installation manual, development process, feature specifications, security setup, team composition, and guidelines for contributions should all be included.  Make it structured and professional..''
+    \item ``Suggest suitable agile software development methodologies for a semester student-facing university project with continuous user feedback.''
+    \item ``How to implement effective games based learning in educational platforms without creating unhealthy competition?''
+    \item `` Can you provide an estimated time required to develop the following modules of the given mobile app and webapp, based on available data and previous project estimates?”''
+    \item `` Remove the grammatical mistakes while keeping the words and sentences the same.''
+    \item ``what are main cause of student being bored by now a days apps like qobe e.t.c.''
+\end{itemize}
+
+\end{document}
